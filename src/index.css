@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+@Media(max-width:460px){
+    .navbar_links{
+        display: none;
+    }
+    .navbar_image{
+        width: 120px;
+    }
+}
+.carousel_item{
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    margin-top: 40px;
+}
+@media(max-width:700px){
+    .carousel_item{
+        width: auto;
+        padding: 0;  
+    }
+    .carousel_p br{
+display: none;
+    }
+    .carousel_p{
+        font-size: 10px;
+    }
+    .carousel_h1{
+        width: auto;
+        font-size: 40px;
+    }
+}
+.ant-slider-track{
+    border: 2px solid #46A358;
+}
