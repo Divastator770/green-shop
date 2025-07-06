@@ -1,4 +1,5 @@
 export interface AuthType{
+    image:string,
     _id:string,
     building_address:{
     country:string,
@@ -43,6 +44,7 @@ export interface DiscountFlowerType{
     title:string,
 }
         export interface ProductsType{
+            _id:string,
             category:string,
             comments:string[],
             description:string,
@@ -57,5 +59,54 @@ export interface DiscountFlowerType{
         tags:[],
         title:string,
         views:number,
-        _id:string,
-        }   
+        
+            }   
+
+export interface UserType {
+    _id: string;
+    name: string;
+    surname: string;
+    profile_photo: string;
+    followers?: string[];
+    following?: string[];
+  }
+  
+  export interface AuthUser {
+    _id: string;
+    name: string;
+    surname: string;
+    email: string;
+    profile_photo: string;
+    followers?: string[];
+    following?: string[];
+  }
+  
+  export interface AppUser {
+    _id: string;
+    name: string;
+    surname: string;
+    profile_photo: string;
+    followers?: string[];
+  }
+  
+  export interface SessionUser {
+    _id: string;
+    name: string;
+    surname: string;
+    profile_photo: string;
+    followers?: string[];
+    following?: string[];
+    bio?:string,
+
+  }
+  export interface CheckoutModalType {
+    _id: string
+    createdAt: string
+    total: number
+    products: {
+      title: string
+      quantity: number
+      price: number
+    }[]
+  }
+  

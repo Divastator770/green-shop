@@ -25,7 +25,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="cols grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="ddd cols  grid sm:grid-cols-2 md:grid-cols-4 gap-4">
         <div className="col flex flex-col gap-2 items-center">
           <h1 className="text-lg font-semibold">My account</h1>
           <p className="text-gray-500 text-sm">About</p>

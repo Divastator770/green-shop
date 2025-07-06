@@ -37,7 +37,7 @@ const Card: FC<ProductsType> = (props) => {
             <ShoppingCartOutlined className="text-[22px]" />
           </div>
           <div className={style_icons} onClick={handleLike}>
-            <HeartOutlined className={`text-[22px] ${isLiked ? 'text-red-500' : ''}`} />
+            <HeartOutlined className={`text-[22px] ${isLiked ? '!text-red-500' : ''}`} />
           </div>
           <div className={style_icons} onClick={handleViewDetails}>
             <SearchOutlined className="text-[22px]" />

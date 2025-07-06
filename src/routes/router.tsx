@@ -4,13 +4,14 @@ import CartPage from '../pages/cartpage/CartPage'
 import ProductDetail from '../pages/productDetail/ProductDetail'
 import BlogPage from '../components/Blog'
 import Home from '../pages/home'
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter,  } from 'react-router-dom'
 import AccountPage from '../pages/accountPage/accountPage'
 import Wishlist from '../pages/accountPage/wishlist'
 import MyProducts from '../pages/accountPage/myProducts'
 import TrackOrder from '../pages/accountPage/trackOrder'
 import Address from '../pages/accountPage/address'
 import Footer from '../components/footer'
+import UserDetailPage from '../pages/user/userDetailPage'
 
 export const router = createBrowserRouter([
   { path: '/', element: <Home /> },
@@ -31,4 +32,5 @@ export const router = createBrowserRouter([
     ]
   },
   { path: '/footer', element: <Footer /> }, 
+  { path: '/user/:id', element: <UserDetailPage /> }
 ])

@@ -12,7 +12,7 @@ import { Carousel } from 'antd';
 const CarouselPart: React.FC = () => (
   <div className="container">
     <Carousel autoplay>
-    <div>
+    <div className='pb-[30px]'>
         <div className=' carousel_item flex flex-col  pl-[100px] pb-[60px] pt-[40px]'>
             <h2 className=' carousel_h2 text-[15px]'>Welcome to GreenShop</h2>
             <h1 className='carousel_h1 text-[50px] font-extrabold w-[350px]'>Let’s Make a  
